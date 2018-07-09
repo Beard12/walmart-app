@@ -1,0 +1,4 @@
+<div id="productsContainer">
+    <div *ngIf="showError" class="errorMessage">{{errorMessage}}</div>
+    <product-display *ngFor="let model of products" [model]="model"></product-display>
+</div>

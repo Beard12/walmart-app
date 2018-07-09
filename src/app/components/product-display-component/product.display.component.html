@@ -1,0 +1,20 @@
+<div *ngIf="model != null" id="product_{{model?.itemId}}" class="productContainer">
+    <img class="productImage" [routerLink]="['/product', model.itemId]" src="{{model?.mediumImage}}" alt="{{model?.name}}" />
+    <div class="productInfo">
+        <div class="titleAndReviews">
+            <a [routerLink]="['/product', model.itemId]">
+                <h2 class="productTitle" >{{model?.name}}</h2>
+            </a>
+            <div class="rating" *ngIf="model?.numReviews > 0">
+                <img src="{{model?.customerRatingImage}}" alt="{{model?.customerRating}} rating"/>
+                <span>{{model?.numReviews}} reviews</span>
+            </div>
+        </div>
+        <div class="priceShip">
+            <span class="price">{{model?.salePrice | currency :'USD': true : '1.2-2' }} &nbsp;&nbsp;<span class="msrp">{{model?.msrp | currency :'USD': true : '1.2-2' }}</span></span>
+            <div>
+                <span class="twoShip" *ngIf="model?.isTwoDayShippingEligible">2-day shipping</span>
+            </div>
+        </div>
+    </div>
+</div>

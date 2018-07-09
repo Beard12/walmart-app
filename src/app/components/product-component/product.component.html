@@ -1,0 +1,14 @@
+<div id="productPage">
+    <product-display [model]="model"></product-display>
+    <div *ngIf="showError" class="errorMessage">{{errorMessage}}</div>
+    <div id="recommendProductsPanel" *ngIf="recommendedProducts.length > 0">
+        <div class="productMini" *ngFor="let product of recommendedProducts">
+            <a [routerLink]="['/product', product.itemId]">
+                <img src="{{product?.thumbnailImage}}" alt="{{product?.name}}" />
+                <div>
+                    <span>{{product?.name}}</span>
+                </div>
+            </a>
+        </div>
+    </div>
+</div>

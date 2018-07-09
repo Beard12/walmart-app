@@ -1,0 +1,43 @@
+.productMini{
+    display:inline-block;
+    width:20%;
+    vertical-align: top;
+    margin-top: 10px;
+    margin-left: 30px;
+    border: 1px solid white;
+    padding: 5px;
+    text-align: center;
+}
+
+.productMini:hover{
+    border: 1px solid #e6e7e8;
+}
+
+.productMini img {
+    margin:0 auto;
+}
+
+.productMini span{
+    color: black;
+    font-size:.875rem;   
+}
+
+.productMini a{
+    text-decoration:none;
+}
+
+#recommendProductsPanel{
+    width:90%;
+    margin: 10px auto 0;
+}
+
+#productPage{
+    width:60%;
+    margin: 10px auto 0;
+}
+
+.errorMessage{
+    font-size: 1rem;
+    text-align: center;
+    margin-top:10px;
+}

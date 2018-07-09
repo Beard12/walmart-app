@@ -1,0 +1,62 @@
+.price{
+    font-weight:bold;
+    font-size: 1rem;
+}
+
+.msrp{
+    text-decoration: line-through;
+    color:#6d6e71;
+    font-size: .875rem;
+    font-weight:normal;
+}
+
+.productImage{
+    border:1px solid white;
+    cursor:pointer;
+}
+.productImage:hover{
+    border:1px solid #e6e7e8;
+}
+
+.productContainer{
+    border:1px solid #e6e7e8;
+    padding: 10px;   
+}
+
+.twoShip{
+    color:#2a8703
+}
+
+.productInfo{
+    display:inline-block;
+    vertical-align: top;
+    margin-left: 10%; 
+    width:60%;   
+}
+
+.productTitle{
+    margin-top:0;
+}
+
+.productTitle:hover{
+    text-decoration: underline;
+}
+
+.priceShip{
+    display: inherit;
+    vertical-align: inherit;
+    width:25%;
+    margin-top:10px;
+    margin-left:20%;
+}
+
+.titleAndReviews{
+    display:inherit;
+    vertical-align:inherit;
+    width:50%;
+}
+
+.titleAndReviews a{
+    text-decoration:none;
+    color:black;
+}
