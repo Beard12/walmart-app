@@ -43,7 +43,7 @@
 }
 
 .priceShip{
-    display: inherit;
+    display: inline-block;
     vertical-align: inherit;
     width:25%;
     margin-top:10px;
@@ -51,7 +51,7 @@
 }
 
 .titleAndReviews{
-    display:inherit;
+    display:inline-block;
     vertical-align:inherit;
     width:50%;
 }
@@ -59,4 +59,36 @@
 .titleAndReviews a{
     text-decoration:none;
     color:black;
+}
+
+@media (max-width:1220px){
+    .productImage{
+        margin: 0 auto 10px;
+        display: block;
+    }
+
+    .productInfo{
+        display:block;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    .productTitle{
+        font-size:1rem;
+    }
+
+}
+
+@media(max-width:900px){
+    .productTitle{
+        font-size:.75rem;
+    }
+    
+    .reviewText{
+        display:none;
+    }
+
+    .twoShip{
+        font-size:.75rem;
+    }
 }

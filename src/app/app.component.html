@@ -1,7 +1,7 @@
 <div id="searchPanel">
     <img id="logoSearch" src="assets/images/walmart.jpg" alt="logo">
     <div id="inputWrapper">
-        <input type="text" id="searchInput" autofocus="true" #search (keydown)="productSearchByKey($event,search)">
+        <input type="text" id="searchInput"  placeholder="Search"autofocus="true" #search (keydown)="productSearchByKey($event,search)">
         <button type="button" id="searchButton" (click)="productSearch(search)">Search</button>
     </div>
 </div>

@@ -7,7 +7,7 @@
             </a>
             <div class="rating" *ngIf="model?.numReviews > 0">
                 <img src="{{model?.customerRatingImage}}" alt="{{model?.customerRating}} rating"/>
-                <span>{{model?.numReviews}} reviews</span>
+                <span class="reviewText">{{model?.numReviews}} review<span *ngIf="model.numReviews > 1">s</span></span>
             </div>
         </div>
         <div class="priceShip">

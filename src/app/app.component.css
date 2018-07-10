@@ -8,12 +8,13 @@
 }
 
 #inputWrapper{
-    margin-left: 10%;
-    margin-right: 20%;
+    margin-left:10%;
     width:50%;
     display:inline-block;
     vertical-align: top;
     padding-top: 3px;
+    max-height:45px;
+    white-space: nowrap;
 }
 
 #logoSearch{
@@ -28,12 +29,12 @@
     height:30px;
     border: 2px solid #1a75ce;
     border-radius:5px;
+    display: inline-block;
 }
 
 
 #searchButton{
     background-color:#00508f;
-    border:none;
     text-align:center;
     color:white;
     border-radius:4px;
@@ -41,10 +42,31 @@
     margin-left:10px;
     font-size:12px;
     padding: 10px;
+    display: inline-block;
 }
 
 #searchButton:hover{
     background-color:white;
     color:#00508f;
     border: 2px solid #00508f;
+}
+
+@media(max-width: 800px){
+    #searchButton{
+        display: none;
+    }
+    #inputWrapper{
+        margin:0 auto;
+    }
+}
+
+@media(max-width:600px){
+    #logoSearch{
+        display:none;
+    }
+
+    #inputWrapper{
+        width:80%;
+        margin-left:15%; 
+    }
 }

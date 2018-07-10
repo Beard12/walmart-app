@@ -41,3 +41,21 @@
     text-align: center;
     margin-top:10px;
 }
+
+@media (max-width:1730px){
+    .productMini{
+        width:25%
+    }
+}
+
+@media (max-width:1070px){
+    .productMini{
+        width:40%;
+    }
+}
+
+@media (max-width:900px){
+    .productMini{
+        width:auto;
+    }
+}
