@@ -8,6 +8,10 @@ import { Constants } from './constants';
     templateUrl: './app.component.html',
     styleUrls: ['./app.component.css']
 })
+
+/**
+ * landing component, supports the retrieving the search input and routing accordingly
+ */
 export class AppComponent {
     constructor(
         private router: Router,

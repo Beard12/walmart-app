@@ -4,10 +4,8 @@ import { HttpModule, JsonpModule } from '@angular/http';
 import { CommonModule } from '@angular/common';
 
 import { AppComponent } from './app.component';
-//import { ProductService } from './services/product.service'
 import { ProductsModule } from './modules/product.module';
 import { AppRoutingModule } from './modules/app-routing.module';
-import { KeyService } from './services/keys.service';
 
 @NgModule({
   declarations: [
